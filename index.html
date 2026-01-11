@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marius Chartier-Le Goff — Portfolio (Monde mystique)</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background + world -->
+  <div class="scene" id="scene">
+        <div class="moon" aria-hidden="true">
+        <pre>
+            ⠀⠀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠿⠛⢏⡿⠖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⢀⡴⣞⠯⠉⠈⠀⣠⡶⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣠⣴⠟⠙⠈⣎⡹⠂⣴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢠⣯⡟⢚⣀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⡿⡃⢋⣌⠂⠈⠆⡠⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⢿⠎⢰⡈⠀⠈⠀⣹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⣿⡄⠷⣠⠀⠀⠀⡸⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⢹⣾⣿⣷⣛⠀⠀⠀⣜⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠸⣿⢻⣏⠸⡃⠀⠀⠈⢹⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢻⣿⡮⣠⣗⠒⠤⠀⠀⠹⣳⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣼⢿⣗⣧⣦⢤⠇⢀⣤⣄⠙⣿⡦⣄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⠄
+            ⠀⠀⠈⠛⢏⣷⣶⣜⣤⣈⠂⠜⠀⢀⣀⡉⡭⠯⠖⠲⠒⢶⢖⣯⠟⠁⠀
+            ⠀⠀⠀⠀⠀⠙⠻⣿⣿⣷⣷⣯⣔⡿⣃⠦⡵⣠⠠⢤⣤⠿⠋⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠓⠿⠽⣷⣿⣾⡿⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+    </div>
+    <!-- stars layer -->
+    <div class="stars" aria-hidden="true"></div>
+
+    <!-- world container that will pan horizontally as player moves -->
+    <div id="world" class="world" role="application" aria-label="Monde mystique">
+      <!-- left margin -->
+      <div class="space" style="width:120px"></div>
+
+      <!-- decorative runes / small islands in the world (ASCII blocks) -->
+      <div class="isle isle-1">
+        <pre>
+          .  *
+          * .  .
+        </pre>
+      </div>
+
+      <div class="isle isle-2">
+        <pre>
+          *   .
+          .  *   .
+        </pre>
+      </div>
+
+      <!-- more decorative islands -->
+      <div class="isle isle-3">
+        <pre>
+          .  .   *
+            *  .
+        </pre>
+      </div>
+
+      <!-- player (bonhomme bâton) -->
+      <div id="player" class="player" aria-label="Bonhomme bâton joueur">
+        <pre id="playerArt">         O
+        /|\
+        / \</pre>
+      </div>
+
+    <!-- right margin -->
+    <div class="space" style="width:800px"></div>
+      <!-- temple (moved to right side) -->
+      <div class="temple" aria-hidden="false" data-depth="0.6">
+          <pre>
+            /\  
+           /__\   
+          /|  |\  
+         /_|__|_\ 
+           /||\   
+          /_||_\  
+         /__||__\ 
+        /___||___\
+        </pre>
+     </div>
+        <div class="ascii-river">
+        <pre>
+                            .     .       .
+                .       *       .       *
+                        .      .    *       .
+                    .  *     ~  ~  ~     *   .
+                            ~ ~ ~ ~ ~ ~ ~ ~ ~
+                        ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+                            ~ ~ ~ ~ ~ ~ ~ ~ ~
+                    .   ~ ~ ~ ~ ~ ~ ~ ~ ~   .
+                .          ~ ~ ~ ~ ~ ~ ~ ~          .
+                        .    ~ ~ ~ ~ ~    .
+                            *      ~ ~      *
+        </pre>
+        </div>
+        <div class="ascii-river-reflection">
+        <pre>
+                            .  .  .  .  .
+                    .     .    .     .
+                .       .  . . . . . .
+        </pre>
+        </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="ground"></div>
+  </div>
+
+  <!-- UI layers (header + content) -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- moustache logo (typing intro uses the provided ASCII art) -->
+       <a href="index.html" style="text-decoration: none;">
+      <pre id="moustacheLogo" class="moustache" data-lines='[
+"⠀⢀⣠⣄⡀⠀⠀⠀⣠⣶⣾⣿⣿⣶⣦⣴⣾⣿⣿⣷⣦⣄⠀⠀⠀⢀⣠⣄⡀⠀",
+"⣰⣿⠟⠛⢻⡆⣠⣾⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢰⠟⠛⢻⣷",
+"⢻⣿⣦⣀⣤⣾⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣦⣤⣀⣼⡿",
+"⠀⠛⠿⢿⣿⣿⡿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⢿⣿⣿⡿⠿⠋⠀"
+]'></pre></a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="./moi/presentation.html">À propos</a>
+        <a href="./projet/home_projet.html">Projets</a>
+        <a href="./Compétence/home_competence.html">Compétences</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <!-- About -->
+    <section id="about" class="card section">
+      <div class="section-header"><pre class="ascii-title">--[ À PROPOS ]--</pre></div>
+      <p class="lead"><strong>Marius Chartier-Le Goff</strong> — étudiant en 3ᵉ année de BUT Informatique.</p>
+      <p class="placeholder">“Je suis étudiant en 3e année d’un BUT informatique et je suis à la recherche d'un stage pour conclure ma formation.”</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card section">
+      <div class="section-header"><pre class="ascii-title">--[ PROJETS ]--</pre></div>
+      <div class="projects-grid">
+        <article class="project"><h3>Projet 1 — Titre</h3><p class="project-desc">Description (placeholder)</p></article>
+        <article class="project"><h3>Projet 2 — Titre</h3><p class="project-desc">Description (placeholder)</p></article>
+        <article class="project"><h3>Projet 3 — Titre</h3><p class="project-desc">Description (placeholder)</p></article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card section">
+      <div class="section-header"><pre class="ascii-title">--[ COMPÉTENCES ]--</pre></div>
+      <div class="skills-grid">
+        <div class="skill"><h4>Langages</h4><ul><li>Python (placeholder)</li><li>HTML/CSS/JS</li></ul></div>
+        <div class="skill"><h4>Outils</h4><ul><li>Git</li><li>Linux</li></ul></div>
+        <div class="skill"><h4>Autres</h4><ul><li>Data & IA</li><li>Qualité logicielle</li></ul></div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="card section">
+      <div class="section-header"><pre class="ascii-title">--[ CV ]--</pre></div>
+      <p>Télécharge CV (placeholder) : <a href="CV_2025-11-18_Marius_Chartier--Le Goff.pdf" download class="btn">Télécharger</a></p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card section">
+      <div class="section-header"><pre class="ascii-title">--[ CONTACT ]--</pre></div>
+      <p class="lead">Contact : <a href="mailto:marius.clg.important@laposte.net">marius.clg.important@laposte.net</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    
+
+    <pre class="ascii-sep">----------------------------------------</pre>
+    <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
+    <p class="small">Monde mystique limité • Bonhomme bâton jouable</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- interaction prompt shown when player is near the temple -->
+  <div id="interactPrompt" class="interact-prompt" aria-hidden="true">Appuyez sur « E » pour entrer dans le temple</div>
+</body>
+</html>

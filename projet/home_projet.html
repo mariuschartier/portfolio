@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Document</title>
+</head>
+<body>
+      <!-- UI layers (header + content) -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- moustache logo (typing intro uses the provided ASCII art) -->
+       <a href="../index.html" style="text-decoration: none;">
+      <pre id="moustacheLogo" class="moustache typed" data-lines='[
+"⠀⢀⣠⣄⡀⠀⠀⠀⣠⣶⣾⣿⣿⣶⣦⣴⣾⣿⣿⣷⣦⣄⠀⠀⠀⢀⣠⣄⡀⠀",
+"⣰⣿⠟⠛⢻⡆⣠⣾⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢰⠟⠛⢻⣷",
+"⢻⣿⣦⣀⣤⣾⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣦⣤⣀⣼⡿",
+"⠀⠛⠿⢿⣿⣿⡿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⢿⣿⣿⡿⠿⠋⠀"
+]'></pre></a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="../moi/presentation.html">À propos</a>
+        <a href="../projet/home_projet.html">Projets</a>
+        <a href="../Compétence/home_competence.html">Compétences</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+    <main class="container">
+        <section class="card section">
+			<div class="section-header">
+				<pre class="ascii-title">--[ PROJETS ]--</pre>
+			</div>
+
+			<div class="filters">
+				<button data-filter="all">Tous</button>
+				<button data-filter="backend">Backend</button>
+				<button data-filter="data">Data</button>
+				<button data-filter="java">Java</button>
+				<button data-filter="python">Python</button>
+				<button data-filter="but">BUT Informatique</button>
+			</div>
+		</section>
+
+		<section class="card section">
+			<div class="projects-grid">
+
+				<article class="project" data-tags="backend java but">
+					<h3>API de gestion de dépenses</h3>
+					<p>
+						Développement d’une API REST pour la gestion de dépenses,
+						réalisée en Java avec Spring Boot.
+					</p>
+					<div class="project-tags">
+						<span>#Backend</span>
+						<span>#Java</span>
+						<span>#SpringBoot</span>
+					</div>
+					<a href="projets/api-depenses.html" class="project-link">
+						Voir le projet
+					</a>
+				</article>
+
+				<article class="project" data-tags="data python but">
+					<h3>Analyse de données de performances</h3>
+					<p>
+						Analyse statistique et visualisation de données de performance
+						d’une API.
+					</p>
+					<div class="project-tags">
+						<span>#Data</span>
+						<span>#Python</span>
+						<span>#Statistiques</span>
+					</div>
+					<a href="projets/analyse-performances.html" class="project-link">
+						Voir le projet
+					</a>
+				</article>
+
+			</div>
+		</section>
+
+				
+        
+        <footer class="site-footer">
+            <pre class="ascii-sep">----------------------------------------</pre>
+            <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
+        </footer>
+        
+        <script src="script.js"></script>
+
+    </main>
+</body>
+  
+</html>

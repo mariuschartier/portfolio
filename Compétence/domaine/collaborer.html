@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+
+    <title>Marius Chartier-Le Goff — Portfolio (Présentation)</title>
+</head>
+<body>
+
+<div class="scene" id="scene">
+    <!-- stars layer -->
+    <div class="moon" aria-hidden="true">
+        <pre>
+            ⠀⠀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠿⠛⢏⡿⠖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⢀⡴⣞⠯⠉⠈⠀⣠⡶⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣠⣴⠟⠙⠈⣎⡹⠂⣴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢠⣯⡟⢚⣀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⡿⡃⢋⣌⠂⠈⠆⡠⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⢿⠎⢰⡈⠀⠈⠀⣹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⣿⡄⠷⣠⠀⠀⠀⡸⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⢹⣾⣿⣷⣛⠀⠀⠀⣜⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠸⣿⢻⣏⠸⡃⠀⠀⠈⢹⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢻⣿⡮⣠⣗⠒⠤⠀⠀⠹⣳⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣼⢿⣗⣧⣦⢤⠇⢀⣤⣄⠙⣿⡦⣄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⠄
+            ⠀⠀⠈⠛⢏⣷⣶⣜⣤⣈⠂⠜⠀⢀⣀⡉⡭⠯⠖⠲⠒⢶⢖⣯⠟⠁⠀
+            ⠀⠀⠀⠀⠀⠙⠻⣿⣿⣷⣷⣯⣔⡿⣃⠦⡵⣠⠠⢤⣤⠿⠋⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠓⠿⠽⣷⣿⣾⡿⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+    </div>
+
+        <!-- stars layer -->
+    <div class="stars" aria-hidden="true"></div>
+
+    <!-- world container that will pan horizontally as player moves -->
+    <div id="world" class="world" role="application" aria-label="Monde mystique">
+      <!-- left margin -->
+      <div class="space" style="width:120px"></div>
+
+      <!-- decorative runes / small islands in the world (ASCII blocks) -->
+      <div class="isle isle-1">
+        <pre>
+          .  *
+          * .  .
+        </pre>
+      </div>
+
+      <div class="isle isle-2">
+        <pre>
+          *   .
+          .  *   .
+        </pre>
+      </div>
+
+      <!-- more decorative islands -->
+      <div class="isle isle-3">
+        <pre>
+          .  .   *
+            *  .
+        </pre>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+      <!-- UI layers (header + content) -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- moustache logo (typing intro uses the provided ASCII art) -->
+       <a href="../../index.html" style="text-decoration: none;">
+      <pre id="moustacheLogo" class="moustache" data-lines='[
+"⠀⢀⣠⣄⡀⠀⠀⠀⣠⣶⣾⣿⣿⣶⣦⣴⣾⣿⣿⣷⣦⣄⠀⠀⠀⢀⣠⣄⡀⠀",
+"⣰⣿⠟⠛⢻⡆⣠⣾⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢰⠟⠛⢻⣷",
+"⢻⣿⣦⣀⣤⣾⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣦⣤⣀⣼⡿",
+"⠀⠛⠿⢿⣿⣿⡿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⢿⣿⣿⡿⠿⠋⠀"
+]'></pre></a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="../../moi/presentation.html">À propos</a>
+        <a href="../../projet/home_projet.html">Projets</a>
+        <a href="../../Compétence/home_competence.html">Compétences</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+    <main class="container">
+        <h1>Travailler dans une équipe informatique</h1>
+
+        
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ PRÉSENTATION ]--</pre>
+            </div>
+            <p class="objectif-desc">
+                Ce domaine de compétence concerne l’intégration et la collaboration au sein d’une équipe
+                informatique. Il vise à développer les aptitudes interpersonnelles, à comprendre les rôles
+                et les missions des acteurs d’un projet informatique, et à participer au pilotage et à
+                l’accompagnement des équipes dans un contexte professionnel.
+            </p>
+        </section>
+
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ NIVEAUX D’ÉTUDE & COMPÉTENCES TRAVAILLÉES ]--</pre>
+            </div>
+
+            <article class="objectif">
+                <h3>Niveau 1 – Identifier ses aptitudes pour travailler en équipe</h3>
+                <ul class="skills-list">
+                    <li>Appréhender l’écosystème numérique (AC16.01)</li>
+                    <li>Découvrir les aptitudes requises selon les secteurs informatiques (AC16.02)</li>
+                    <li>Identifier les statuts, fonctions et rôles au sein d’une équipe pluridisciplinaire (AC16.03)</li>
+                    <li>Acquérir et développer des compétences interpersonnelles pour le travail en équipe (AC16.04)</li>
+                </ul>
+            </article>
+
+            <article class="objectif">
+                <h3>Niveau 2 – Situer son rôle et ses missions dans une équipe informatique</h3>
+                <ul class="skills-list">
+                    <li>Comprendre la diversité et la structure de l’informatique dans une organisation (AC26.01)</li>
+                    <li>Appliquer une démarche pour intégrer une équipe informatique (AC26.02)</li>
+                    <li>Mobiliser les compétences interpersonnelles dans un contexte professionnel (AC26.03)</li>
+                    <li>Rendre compte de son activité professionnelle et de son travail en équipe (AC26.04)</li>
+                </ul>
+            </article>
+
+            <article class="objectif">
+                <h3>Niveau 3 – Manager une équipe informatique</h3>
+                <ul class="skills-list">
+                    <li>Organiser et partager une veille technologique et informationnelle (AC36.01)</li>
+                    <li>Identifier les enjeux de l’économie de l’innovation numérique (AC36.02)</li>
+                    <li>Guider la conduite du changement informatique au sein d’une organisation (AC36.03)</li>
+                    <li>Accompagner le management de projets informatiques (AC36.04)</li>
+                </ul>
+            </article>
+        </section>
+
+
+
+
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
+            </div>
+            <ul class="skills-list">
+                <li>PROJET</li>
+            </ul>
+        </section>
+
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
+            </div>
+            <ul class="skills-list">
+                <li>Participation à des projets informatiques en équipe dans le cadre du BUT Informatique</li>
+                <li>Travail collaboratif avec répartition des rôles et des responsabilités</li>
+                <li>Utilisation d’outils collaboratifs pour le suivi et le partage des travaux</li>
+                <li>Présentations orales et comptes rendus de projets en équipe</li>
+            </ul>
+        </section>
+
+
+
+
+        
+        
+        <footer class="site-footer">
+            <pre class="ascii-sep">----------------------------------------</pre>
+            <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
+        </footer>
+        
+        <script src="../script.js"></script>
+    </main>
+</body>
+  
+</html>

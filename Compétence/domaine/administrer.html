@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+
+    <title>Marius Chartier-Le Goff — Portfolio (Présentation)</title>
+</head>
+<body>
+
+<div class="scene" id="scene">
+    <!-- stars layer -->
+    <div class="moon" aria-hidden="true">
+        <pre>
+            ⠀⠀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠿⠛⢏⡿⠖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⢀⡴⣞⠯⠉⠈⠀⣠⡶⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣠⣴⠟⠙⠈⣎⡹⠂⣴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢠⣯⡟⢚⣀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⡿⡃⢋⣌⠂⠈⠆⡠⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⢿⠎⢰⡈⠀⠈⠀⣹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⣿⡄⠷⣠⠀⠀⠀⡸⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⢹⣾⣿⣷⣛⠀⠀⠀⣜⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠸⣿⢻⣏⠸⡃⠀⠀⠈⢹⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢻⣿⡮⣠⣗⠒⠤⠀⠀⠹⣳⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣼⢿⣗⣧⣦⢤⠇⢀⣤⣄⠙⣿⡦⣄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⠄
+            ⠀⠀⠈⠛⢏⣷⣶⣜⣤⣈⠂⠜⠀⢀⣀⡉⡭⠯⠖⠲⠒⢶⢖⣯⠟⠁⠀
+            ⠀⠀⠀⠀⠀⠙⠻⣿⣿⣷⣷⣯⣔⡿⣃⠦⡵⣠⠠⢤⣤⠿⠋⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠓⠿⠽⣷⣿⣾⡿⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+    </div>
+
+        <!-- stars layer -->
+    <div class="stars" aria-hidden="true"></div>
+
+    <!-- world container that will pan horizontally as player moves -->
+    <div id="world" class="world" role="application" aria-label="Monde mystique">
+      <!-- left margin -->
+      <div class="space" style="width:120px"></div>
+
+      <!-- decorative runes / small islands in the world (ASCII blocks) -->
+      <div class="isle isle-1">
+        <pre>
+          .  *
+          * .  .
+        </pre>
+      </div>
+
+      <div class="isle isle-2">
+        <pre>
+          *   .
+          .  *   .
+        </pre>
+      </div>
+
+      <!-- more decorative islands -->
+      <div class="isle isle-3">
+        <pre>
+          .  .   *
+            *  .
+        </pre>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+      <!-- UI layers (header + content) -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- moustache logo (typing intro uses the provided ASCII art) -->
+       <a href="../../index.html" style="text-decoration: none;">
+      <pre id="moustacheLogo" class="moustache" data-lines='[
+"⠀⢀⣠⣄⡀⠀⠀⠀⣠⣶⣾⣿⣿⣶⣦⣴⣾⣿⣿⣷⣦⣄⠀⠀⠀⢀⣠⣄⡀⠀",
+"⣰⣿⠟⠛⢻⡆⣠⣾⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢰⠟⠛⢻⣷",
+"⢻⣿⣦⣀⣤⣾⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣦⣤⣀⣼⡿",
+"⠀⠛⠿⢿⣿⣿⡿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⢿⣿⣿⡿⠿⠋⠀"
+]'></pre></a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="../../moi/presentation.html">À propos</a>
+        <a href="../../projet/home_projet.html">Projets</a>
+        <a href="../../Compétence/home_competence.html">Compétences</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+    <main class="container">
+        <h1>Administrer des systèmes informatiques</h1>
+
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ PRÉSENTATION ]--</pre>
+            </div>
+            <p class="objectif-desc">
+                Ce domaine de compétence concerne l’installation, la configuration et l’administration
+                de systèmes informatiques dans un environnement professionnel. Il inclut la gestion des
+                postes de travail, le déploiement de services réseau et la sécurisation des systèmes et des
+                données au sein d’une architecture réseau.
+            </p>
+        </section>
+
+
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ NIVEAUX D’ÉTUDE & COMPÉTENCES TRAVAILLÉES ]--</pre>
+            </div>
+
+            <article class="objectif">
+                <h3>Niveau 1 – Installer et configurer un poste de travail</h3>
+                <ul class="skills-list">
+                    <li>Identifier les composants matériels et logiciels d’un système numérique (AC13.01)</li>
+                    <li>Utiliser les fonctionnalités de base d’un système multitâches et multiutilisateurs (AC13.02)</li>
+                    <li>Installer et configurer un système d’exploitation et des outils de développement (AC13.03)</li>
+                    <li>Configurer un poste de travail dans un réseau d’entreprise (AC13.04)</li>
+                </ul>
+            </article>
+
+            <article class="objectif">
+                <h3>Niveau 2 – Déployer des services dans une architecture réseau</h3>
+                <ul class="skills-list">
+                    <li>Concevoir et développer des applications communicantes (AC23.01)</li>
+                    <li>Utiliser des serveurs et des services réseaux virtualisés (AC23.02)</li>
+                    <li>Sécuriser les services et les données d’un système informatique (AC23.03)</li>
+                </ul>
+            </article>
+        </section>
+
+
+
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
+            </div>
+            <ul class="skills-list">
+                <li>PROJET</li>
+            </ul>
+        </section>
+        
+        <section class="card section">
+            <div class="section-header">
+                <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
+            </div>
+            <ul class="skills-list">
+                <li>Installation et configuration de postes de travail sous Linux</li>
+                <li>Mise en place de services réseau dans un environnement virtualisé</li>
+                <li>Déploiement et sécurisation d’applications communicantes</li>
+                <li>Travaux pratiques d’administration systèmes et réseaux</li>
+            </ul>
+        </section>
+
+
+
+        
+        
+        <footer class="site-footer">
+            <pre class="ascii-sep">----------------------------------------</pre>
+            <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
+        </footer>
+        
+        <script src="../script.js"></script>
+    </main>
+</body>
+  
+</html>

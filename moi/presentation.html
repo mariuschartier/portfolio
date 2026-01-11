@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Marius Chartier-Le Goff — Portfolio (Présentation)</title>
+</head>
+<body>
+
+<div class="scene" id="scene">
+    <!-- stars layer -->
+    <div class="moon" aria-hidden="true">
+        <pre>
+            ⠀⠀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠿⠛⢏⡿⠖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⢀⡴⣞⠯⠉⠈⠀⣠⡶⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣠⣴⠟⠙⠈⣎⡹⠂⣴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢠⣯⡟⢚⣀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⡿⡃⢋⣌⠂⠈⠆⡠⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⢿⠎⢰⡈⠀⠈⠀⣹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⣸⣿⡄⠷⣠⠀⠀⠀⡸⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⢹⣾⣿⣷⣛⠀⠀⠀⣜⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠸⣿⢻⣏⠸⡃⠀⠀⠈⢹⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⢻⣿⡮⣠⣗⠒⠤⠀⠀⠹⣳⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⣼⢿⣗⣧⣦⢤⠇⢀⣤⣄⠙⣿⡦⣄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⠄
+            ⠀⠀⠈⠛⢏⣷⣶⣜⣤⣈⠂⠜⠀⢀⣀⡉⡭⠯⠖⠲⠒⢶⢖⣯⠟⠁⠀
+            ⠀⠀⠀⠀⠀⠙⠻⣿⣿⣷⣷⣯⣔⡿⣃⠦⡵⣠⠠⢤⣤⠿⠋⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠓⠿⠽⣷⣿⣾⡿⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+    </div>
+
+        <!-- stars layer -->
+    <div class="stars" aria-hidden="true"></div>
+
+    <!-- world container that will pan horizontally as player moves -->
+    <div id="world" class="world" role="application" aria-label="Monde mystique">
+      <!-- left margin -->
+      <div class="space" style="width:120px"></div>
+
+      <!-- decorative runes / small islands in the world (ASCII blocks) -->
+      <div class="isle isle-1">
+        <pre>
+          .  *
+          * .  .
+        </pre>
+      </div>
+
+      <div class="isle isle-2">
+        <pre>
+          *   .
+          .  *   .
+        </pre>
+      </div>
+
+      <!-- more decorative islands -->
+      <div class="isle isle-3">
+        <pre>
+          .  .   *
+            *  .
+        </pre>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+      <!-- UI layers (header + content) -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- moustache logo (typing intro uses the provided ASCII art) -->
+       <a href="../index.html" style="text-decoration: none;">
+      <pre id="moustacheLogo" class="moustache" data-lines='[
+"⠀⢀⣠⣄⡀⠀⠀⠀⣠⣶⣾⣿⣿⣶⣦⣴⣾⣿⣿⣷⣦⣄⠀⠀⠀⢀⣠⣄⡀⠀",
+"⣰⣿⠟⠛⢻⡆⣠⣾⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣷⡄⢰⠟⠛⢻⣷",
+"⢻⣿⣦⣀⣤⣾⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣦⣤⣀⣼⡿",
+"⠀⠛⠿⢿⣿⣿⡿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⠿⢿⣿⣿⡿⠿⠋⠀"
+]'></pre></a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="../moi/presentation.html">À propos</a>
+        <a href="../projet/home_projet.html">Projets</a>
+        <a href="../Compétence/home_competence.html">Compétences</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+    <main class="container">
+        <section id="presentation" class="card section">
+            <div class="section-header"><pre class="ascii-title">--[ QUI SUIS-JE? ]--</pre></div>
+            <div>
+                <img id="image_moi" src="./moi.jpg" alt="moi" >
+                <p>
+                    Je suis Marius Chartier-Le Goff, j’ai 20 ans et je suis actuellement en troisième année de BUT Informatique à l’IUT de Lannion. 
+                    Passionné par le développement logiciel et les technologies liées aux données et à l’intelligence artificielle, j’ai acquis au cours de ma formation des compétences solides en programmation, bases de données et développement d’applications. 
+                    Ce portfolio présente mes projets, mes compétences et mon parcours académique.
+
+                </p>
+                
+            </div>
+            
+        </section>
+        <section id="parcour" class="card section">
+            <div class="section-header"><pre class="ascii-title">--[ MON PARCOURS ]--</pre></div>
+            <ul >
+               
+                <li>
+                    <h3>Lycée Rabelais(St Brieuc) 2020-2023 </h3>
+                    <p>J'ai appris pendant 3 ans au lycée Rabelais de St Brieuc. J'y ai suivi les cours des spécialités NSI (Numérique et Science de l'Informatique), Mathématiques jusqu'en terminale avec l'option "maths expert".
+                        J'y ai appris comment travailler et développé une attirance vers l'informatique et le développement.</p>
+
+                </li>
+                <li>
+                    <h3>BUT informatique(IUT de Lannion) 2023-2026</h3>
+                    <p>
+                        Formation de trois ans qui m’a permis d’acquérir les connaissances essentielles attendues aujourd’hui d’un développeur dans le monde professionnel. Elle m’a offert l’opportunité de réaliser de nombreux projets en équipe et de renforcer mes compétences dans plusieurs domaines de l’informatique, tels que les réseaux, l’intelligence artificielle, le développement web, la data et l’administration des systèmes informatiques. 
+                        Je me suis plus particulièrement spécialisé dans le parcours C : Administration, gestion et exploitation des données.
+                    </p>
+
+                </li>
+            </ul>
+        </section>
+        <section id="cv" class="card section">
+            <div class="section-header"><pre class="ascii-title">--[ MON CV ]--</pre></div>
+
+        </section>
+        <section id="objectif" class="card section">
+            <div class="section-header"><pre class="ascii-title">--[ MES OBJECTIFS ]--</pre></div>
+            <div class="objectif_grid">
+              <article class="objectif">
+                <h3>À court terme:</h3>
+                <p class="objectif-desc">Obtenir un stage pour ma 3e année de But Informatique</p>
+              </article>
+              <article class="objectif">
+                <h3>À moyen terme:</h3>
+                <p class="objectif-desc">Continuer mes études en école d'ingénieur ou un master dans le domaine de l'IA ou de la manipulation des données</p>
+              </article>
+              <article class="objectif">
+                <h3>À long terme:</h3>
+                <p class="objectif-desc">Travailler dans le domaine de l'IA ou de la manipulation des données</p>
+              </article>
+            </div>
+        </section>
+        <section id="passions" class="card section">
+            <div class="section-header"><pre class="ascii-title">--[ MES PASSIONS ]--</pre></div>
+            <ul>
+                <li>Le développement
+                </li>
+                <li>
+                  Les Jeux de société
+                </li>
+                <li>
+                  Les Jeux vidéo
+                </li>
+            </ul>
+
+        </section>
+        
+        
+        
+        
+        <footer class="site-footer">
+            <pre class="ascii-sep">----------------------------------------</pre>
+            <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </main>
+</body>
+  
+</html>
