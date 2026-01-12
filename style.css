@@ -267,3 +267,7 @@ body.intro-done .scene{ transition: filter 700ms ease; filter:none }
     object-fit: cover;
     display: block;
 }
+
+#moon{
+  color: #cfefff;
+}
