@@ -110,6 +110,22 @@ a{color:var(--accent)}
 .projects-grid, .objectif_grid, .domaine_de_competence_grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:12px }
 .project, .objectif, .domaine_de_competence{ padding:10px; border-radius:8px; background: rgba(255,255,255,0.01); border:1px solid rgba(255,255,255,0.02) }
 
+/* filter buttons */
+.filters{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px }
+.filters button{ 
+  color:var(--muted); 
+  background: rgba(255,255,255,0.02); 
+  border:1px solid rgba(255,255,255,0.03); 
+  padding:6px 12px; 
+  border-radius:6px; 
+  font-size:14px; 
+  cursor:pointer; 
+  transition: all .18s ease; 
+  font-family: var(--mono);
+}
+.filters button:hover{ background: rgba(255,255,255,0.05); color:var(--accent); border-color: rgba(0,212,255,0.1); }
+.filters button.active{ background: rgba(0,212,255,0.1); color:var(--accent); border-color: var(--accent); }
+
 /* footer */
 .site-footer{ max-width:var(--maxw); margin:20px auto 60px; padding:0 20px; color:var(--muted); text-align:center; z-index:6; position:relative }
 
@@ -234,4 +250,20 @@ body.intro-done .scene{ transition: filter 700ms ease; filter:none }
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+
+.project-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }

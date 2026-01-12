@@ -9,9 +9,8 @@
 </head>
 <body>
 
-<div class="scene" id="scene">
-    <!-- stars layer -->
-    <div class="moon" aria-hidden="true">
+  <div class="scene" id="scene">
+        <div class="moon" aria-hidden="true">
         <pre>
             ⠀⠀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠿⠛⢏⡿⠖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
             ⠀⠀⠀⠀⢀⡴⣞⠯⠉⠈⠀⣠⡶⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -29,8 +28,7 @@
             ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠓⠿⠽⣷⣿⣾⡿⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀
         </pre>
     </div>
-
-        <!-- stars layer -->
+    <!-- stars layer -->
     <div class="stars" aria-hidden="true"></div>
 
     <!-- world container that will pan horizontally as player moves -->
@@ -60,10 +58,52 @@
             *  .
         </pre>
       </div>
+
+    <!-- right margin -->
+    <div class="space" style="width:800px"></div>
+      <!-- temple (moved to right side) -->
+      <div class="temple" aria-hidden="false" data-depth="0.6">
+          <pre>
+            /\  
+           /__\   
+          /|  |\  
+         /_|__|_\ 
+           /||\   
+          /_||_\  
+         /__||__\ 
+        /___||___\
+        </pre>
+     </div>
+        <div class="ascii-river">
+        <pre>
+                            .     .       .
+                .       *       .       *
+                        .      .    *       .
+                    .  *     ~  ~  ~     *   .
+                            ~ ~ ~ ~ ~ ~ ~ ~ ~
+                        ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+                            ~ ~ ~ ~ ~ ~ ~ ~ ~
+                    .   ~ ~ ~ ~ ~ ~ ~ ~ ~   .
+                .          ~ ~ ~ ~ ~ ~ ~ ~          .
+                        .    ~ ~ ~ ~ ~    .
+                            *      ~ ~      *
+        </pre>
+        </div>
+        <div class="ascii-river-reflection">
+        <pre>
+                            .  .  .  .  .
+                    .     .    .     .
+                .       .  . . . . . .
+        </pre>
+        </div>
+
+
+
+        </div>
+
     </div>
-
-</div>
-
+    <div class="ground"></div>
+  </div>
 
 
 
@@ -83,8 +123,8 @@
         <a href="../../moi/presentation.html">À propos</a>
         <a href="../../projet/home_projet.html">Projets</a>
         <a href="../../Compétence/home_competence.html">Compétences</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
+        <a href="../../moi/presentation.html#cv">CV</a>
+        <a href="../../index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -132,23 +172,68 @@
             <div class="section-header">
                 <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
             </div>
-            <ul class="skills-list">
-                <li>PROJET</li>
-            </ul>
-        </section>
-        <section class="card section">
-            <div class="section-header">
-                <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
+            <div class="projects-grid">
+                
+				<article class="project" data-tags="data statistiques stage réaliser optimiser  conduire">
+					<h3>Helpis</h3>
+					    <div class="project-image">
+							<img src="./img/helpis.png" alt="Projet Helpis – Application Python de data analyse">
+						</div>
+
+					<p>
+						Développement d’une application Python permettant l’assistance
+						au traitement et à l’analyse de données de laboratoire.
+					</p>
+					<div class="project">
+						<span>#Python</span>
+						<span>#Data</span>
+						<span>#Statistiques</span>
+					</div>
+					<!-- <a href="projets/helpis.html" class="project-link">
+						Voir le projet
+					</a> -->
+				</article>
+
+				<article class="project" data-tags=" but optimiser">
+					<h3>Solution au probleme des n-reines</h3>
+						<div class="project-image">
+							<img src="./img/n_reine.webp" alt="n-reine">
+						</div>
+					<p>
+						Developpement d'un algorithme en Python pour résoudre le problème des n-reines en utilisant en cherchant la rapidité.
+					</p>
+					<div class="project">
+						<span>#Python</span>
+						<span>#Optimiser</span>
+					</div>
+					<!-- <a href="projets/analyse-performances.html" class="project-link">
+						Voir le projet
+					</a> -->
+				</article>
+				
+				
+				<article class="project" data-tags=" ia  statistiques sql but réaliser optimiser gérer collaborer conduire" >
+					<h3>Projet Muse</h3>
+						<div class="project-image">
+							<img src="./img/MuSE_logo.png" alt="muse">
+						</div>
+					<p>
+						Developpement d'une application de recommendation musicale.
+					</p>
+					<div class="project">
+						<span>#Python</span>
+						<span>#Statistiques</span>
+						<span>#IA</span>
+
+					</div>
+					<!-- <a href="projets/analyse-performances.html" class="project-link">
+						Voir le projet
+					</a> -->
+				</article>
             </div>
-            <ul class="skills-list">
-                <li>Analyse et comparaison d’algorithmes sur des jeux de données</li>
-                <li>Optimisation de traitements informatiques en Python ou Java</li>
-                <li>Travaux pratiques d’algorithmique et de structures de données</li>
-                <li>Études d’impact et réflexion sur la performance et la sobriété numérique</li>
-            </ul>
+
         </section>
 
-        
         <footer class="site-footer">
             <pre class="ascii-sep">----------------------------------------</pre>
             <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>

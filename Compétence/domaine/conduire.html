@@ -8,10 +8,8 @@
     <title>Marius Chartier-Le Goff — Portfolio (Présentation)</title>
 </head>
 <body>
-
-<div class="scene" id="scene">
-    <!-- stars layer -->
-    <div class="moon" aria-hidden="true">
+  <div class="scene" id="scene">
+        <div class="moon" aria-hidden="true">
         <pre>
             ⠀⠀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠿⠛⢏⡿⠖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
             ⠀⠀⠀⠀⢀⡴⣞⠯⠉⠈⠀⣠⡶⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -29,8 +27,7 @@
             ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠓⠿⠽⣷⣿⣾⡿⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀
         </pre>
     </div>
-
-        <!-- stars layer -->
+    <!-- stars layer -->
     <div class="stars" aria-hidden="true"></div>
 
     <!-- world container that will pan horizontally as player moves -->
@@ -60,10 +57,52 @@
             *  .
         </pre>
       </div>
+
+    <!-- right margin -->
+    <div class="space" style="width:800px"></div>
+      <!-- temple (moved to right side) -->
+      <div class="temple" aria-hidden="false" data-depth="0.6">
+          <pre>
+            /\  
+           /__\   
+          /|  |\  
+         /_|__|_\ 
+           /||\   
+          /_||_\  
+         /__||__\ 
+        /___||___\
+        </pre>
+     </div>
+        <div class="ascii-river">
+        <pre>
+                            .     .       .
+                .       *       .       *
+                        .      .    *       .
+                    .  *     ~  ~  ~     *   .
+                            ~ ~ ~ ~ ~ ~ ~ ~ ~
+                        ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+                            ~ ~ ~ ~ ~ ~ ~ ~ ~
+                    .   ~ ~ ~ ~ ~ ~ ~ ~ ~   .
+                .          ~ ~ ~ ~ ~ ~ ~ ~          .
+                        .    ~ ~ ~ ~ ~    .
+                            *      ~ ~      *
+        </pre>
+        </div>
+        <div class="ascii-river-reflection">
+        <pre>
+                            .  .  .  .  .
+                    .     .    .     .
+                .       .  . . . . . .
+        </pre>
+        </div>
+
+
+
+        </div>
+
     </div>
-
-</div>
-
+    <div class="ground"></div>
+  </div>
 
 
 
@@ -83,8 +122,8 @@
         <a href="../../moi/presentation.html">À propos</a>
         <a href="../../projet/home_projet.html">Projets</a>
         <a href="../../Compétence/home_competence.html">Compétences</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
+        <a href="../../moi/presentation.html#cv">CV</a>
+        <a href="../../index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -146,22 +185,68 @@
             <div class="section-header">
                 <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
             </div>
-            <ul class="skills-list">
-                <li>PROJET</li>
-            </ul>
+            <div class="projects-grid">
+                				<article class="project" data-tags="data statistiques stage réaliser optimiser  conduire">
+					<h3>Helpis</h3>
+					    <div class="project-image">
+							<img src="./img/helpis.png" alt="Projet Helpis – Application Python de data analyse">
+						</div>
+
+					<p>
+						Développement d’une application Python permettant l’assistance
+						au traitement et à l’analyse de données de laboratoire.
+					</p>
+					<div class="project">
+						<span>#Python</span>
+						<span>#Data</span>
+						<span>#Statistiques</span>
+					</div>
+					<!-- <a href="projets/helpis.html" class="project-link">
+						Voir le projet
+					</a> -->
+				</article>
+
+				
+				<article class="project" data-tags="web but réaliser gérer collaborer conduire">
+					<h3>Site de consultation et publication d'offres de voyages</h3>
+						<div class="project-image">
+							<img src="./img/pact.jpg" alt="pact">
+						</div>
+					<p>
+						Mise en place d'un site de voyage fonctionnel.
+					</p>
+					<div class="project">
+						<span>#Web</span>
+
+
+					</div>
+					<!-- <a href="projets/analyse-performances.html" class="project-link">
+						Voir le projet
+					</a> -->
+				</article>
+				
+				<article class="project" data-tags=" ia  statistiques sql but réaliser optimiser gérer collaborer conduire" >
+					<h3>Projet Muse</h3>
+						<div class="project-image">
+							<img src="./img/MuSE_logo.png" alt="muse">
+						</div>
+					<p>
+						Developpement d'une application de recommendation musicale.
+					</p>
+					<div class="project">
+						<span>#Python</span>
+						<span>#Statistiques</span>
+						<span>#IA</span>
+
+					</div>
+					<!-- <a href="projets/analyse-performances.html" class="project-link">
+						Voir le projet
+					</a> -->
+				</article>
+
+            </div>
         </section>
 
-        <section class="card section">
-            <div class="section-header">
-                <pre class="ascii-title">--[ PROJETS EN LIEN AVEC LE DOMAINE ]--</pre>
-            </div>
-            <ul class="skills-list">
-                <li>Analyse des besoins clients et rédaction de spécifications fonctionnelles</li>
-                <li>Mise en place et suivi de projets académiques en équipe</li>
-                <li>Utilisation d’outils de gestion de projet pour le suivi des tâches et des livrables</li>
-                <li>Participation à des projets intégrant des contraintes métiers et organisationnelles</li>
-            </ul>
-        </section>
 
 
 
