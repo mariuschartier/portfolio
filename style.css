@@ -26,7 +26,7 @@ a{color:var(--accent)}
     radial-gradient(circle at 30% 40%, rgba(255,255,255,0.7) 0.6px, transparent 1px),
     radial-gradient(circle at 60% 10%, rgba(255,255,255,0.5) 0.6px, transparent 1px),
     radial-gradient(circle at 80% 70%, rgba(255,255,255,0.6) 0.5px, transparent 1px);
-  opacity:0.9; mix-blend-mode:screen; filter:blur(.3px);
+  opacity:0.9; mix-blend-mode:screen; filter:blur(1px);
   animation: twinkle 6s linear infinite;
 }
 
@@ -39,7 +39,10 @@ a{color:var(--accent)}
 }
 
 /* simple spaces (margins) */
-.space{flex:0 0 auto}
+.space{
+  flex:0 0 auto;
+  width:200px;
+}
 
 /* islands (ASCII blocks) */
 .isle{
@@ -266,4 +269,8 @@ body.intro-done .scene{ transition: filter 700ms ease; filter:none }
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.moon{
+  filter: blur(1px);
 }
