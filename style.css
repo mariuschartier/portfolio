@@ -271,3 +271,13 @@ body.intro-done .scene{ transition: filter 700ms ease; filter:none }
 #moon{
   color: #cfefff;
 }
+.moon {
+    position: fixed;
+    top: 50%;
+    right: 2em;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 13px;
+    white-space: pre;
+    opacity: 0.95;
+}
