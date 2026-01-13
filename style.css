@@ -305,9 +305,9 @@ body.intro-done .scene{ transition: filter 700ms ease; filter:none }
 
 .moon{
   top: 10em;
-  filter: blur(1px);
+  /* filter: blur(1px); */
 }
 .moon pre {
-  font-size: small;
+  font-size: medium;
   color: yellow;
 }

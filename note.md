@@ -2,14 +2,14 @@
 
 
 
-- faire un page d'acceuil accuillante(lisible )
-- contraste
-- police trop petit 
-- eviter les paragraphe
+- faire un page d'acceuil accuillante(lisible ) v
+- contraste v
+- police trop petit v
+- eviter les paragraphe v
 - exemple star + participation  + date
-- lien vers but
-- langue 
+- lien vers but 
+- langue v
 - num de telephone
-- parler à la premier personne
-- pas de texte centré juste les titres / sous-titre
-- formulaire de contact
+- parler à la premier personne v
+- pas de texte centré juste les titres / sous-titre v
+- formulaire de contact x 

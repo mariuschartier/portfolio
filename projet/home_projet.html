@@ -8,101 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-  <div class="scene" id="scene">
-        <div class="moon" aria-hidden="true">
-        <pre>
-            ⠀⠀⠀⠀⠀⠀⠀⣀⣤⡴⠶⠿⠛⢏⡿⠖⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⠀⠀⢀⡴⣞⠯⠉⠈⠀⣠⡶⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⣠⣴⠟⠙⠈⣎⡹⠂⣴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⢠⣯⡟⢚⣀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⡿⡃⢋⣌⠂⠈⠆⡠⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⣸⢿⠎⢰⡈⠀⠈⠀⣹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⣸⣿⡄⠷⣠⠀⠀⠀⡸⡗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⢹⣾⣿⣷⣛⠀⠀⠀⣜⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠸⣿⢻⣏⠸⡃⠀⠀⠈⢹⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⢻⣿⡮⣠⣗⠒⠤⠀⠀⠹⣳⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-            ⠀⠀⣼⢿⣗⣧⣦⢤⠇⢀⣤⣄⠙⣿⡦⣄⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⠄
-            ⠀⠀⠈⠛⢏⣷⣶⣜⣤⣈⠂⠜⠀⢀⣀⡉⡭⠯⠖⠲⠒⢶⢖⣯⠟⠁⠀
-            ⠀⠀⠀⠀⠀⠙⠻⣿⣿⣷⣷⣯⣔⡿⣃⠦⡵⣠⠠⢤⣤⠿⠋⠀⠀⠀⠀
-            ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠓⠿⠽⣷⣿⣾⡿⠞⠛⠉⠀⠀⠀⠀⠀⠀⠀
-        </pre>
-    </div>
-    <!-- stars layer -->
-    <div class="stars" aria-hidden="true"></div>
-
-    <!-- world container that will pan horizontally as player moves -->
-    <div id="world" class="world" role="application" aria-label="Monde mystique">
-      <!-- left margin -->
-      <div class="space" style="width:200px"></div>
-
-      <!-- decorative runes / small islands in the world (ASCII blocks) -->
-      <div class="isle isle-1">
-        <pre>
-          .  *
-          * .  .
-        </pre>
-      </div>
-
-      <div class="isle isle-2">
-        <pre>
-          *   .
-          .  *   .
-        </pre>
-      </div>
-
-      <!-- more decorative islands -->
-      <div class="isle isle-3">
-        <pre>
-          .  .   *
-            *  .
-        </pre>
-      </div>
-
-    <!-- right margin -->
-    <div class="space" style="width:200px"></div>
-      <!-- temple (moved to right side) -->
-      <div class="temple" aria-hidden="false" data-depth="0.6">
-          <pre>
-            /\  
-           /__\   
-          /|  |\  
-         /_|__|_\ 
-           /||\   
-          /_||_\  
-         /__||__\ 
-        /___||___\
-        </pre>
-     </div>
-        <div class="ascii-river">
-        <pre>
-                            .     .       .
-                .       *       .       *
-                        .      .    *       .
-                    .  *     ~  ~  ~     *   .
-                            ~ ~ ~ ~ ~ ~ ~ ~ ~
-                        ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-                            ~ ~ ~ ~ ~ ~ ~ ~ ~
-                    .   ~ ~ ~ ~ ~ ~ ~ ~ ~   .
-                .          ~ ~ ~ ~ ~ ~ ~ ~          .
-                        .    ~ ~ ~ ~ ~    .
-                            *      ~ ~      *
-        </pre>
-        </div>
-        <div class="ascii-river-reflection">
-        <pre>
-                            .  .  .  .  .
-                    .     .    .     .
-                .       .  . . . . . .
-        </pre>
-        </div>
-
-
-
-        </div>
-
-    </div>
-    <div class="ground"></div>
-  </div>
+  <mystical-scene></mystical-scene>
+  <div class="ground"></div>
       <!-- UI layers (header + content) -->
   <header class="site-header" role="banner">
     <div class="header-inner">
@@ -238,6 +145,7 @@
             <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
         </footer>
         
+        <script src="../scene-component.js"></script>
         <script src="script.js"></script>
 
 
