@@ -6,8 +6,8 @@
 - contraste v
 - police trop petit v
 - eviter les paragraphe v
-- exemple star + participation  + date
-- lien vers but 
+- exemple star + participation  + date v
+- lien vers but v
 - langue v
 - num de telephone
 - parler à la premier personne v
