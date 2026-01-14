@@ -6,7 +6,7 @@ class MysticalScene extends HTMLElement {
 
   loadScene() {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', '/scene.html', false); // synchronous for simplicity
+    xhr.open('GET', '/portfolio/scene.html', false); // synchronous for simplicity
     console.log(xhr)
     xhr.send();
     if (xhr.status === 200) {
