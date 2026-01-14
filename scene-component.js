@@ -1,21 +1,18 @@
 class MysticalScene extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.loadScene();
   }
 
-  async connectedCallback() {
-    try {
-      const response = await fetch('/scene.html');
-      if (!response.ok) throw new Error(response.status);
-
-      const html = await response.text();
-      this.shadowRoot.innerHTML = html;
-
+  loadScene() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', '/scene.html', false); // synchronous for simplicity
+    xhr.send();
+    if (xhr.status === 200) {
+      this.innerHTML = xhr.responseText;
       this.dispatchEvent(new CustomEvent('sceneLoaded', { bubbles: true }));
-    } catch (err) {
-      console.error('Erreur lors du chargement de la scène:', err);
-      this.shadowRoot.innerHTML = `<p>Impossible de charger la scène.</p>`;
+    } else {
+      console.error('Erreur lors du chargement de la scène:', xhr.status);
     }
   }
 }
