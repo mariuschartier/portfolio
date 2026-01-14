@@ -296,7 +296,7 @@ if (modal && modalBody && closeModal) {
     button.addEventListener('click', function () {
       const competence_project = this.dataset.project;
 
-      fetch(`/../../projet/liste_projet/${competence_project}.html`)
+      fetch(`../../projet/liste_projet/${competence_project}.html`)
         .then(response => {
           if (!response.ok) throw new Error("404");
           return response.text();
