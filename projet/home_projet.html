@@ -25,7 +25,7 @@
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="../moi/presentation.html">À propos</a>
         <a href="../projet/home_projet.html">Projets</a>
-        <a href="../Compétence/home_competence.html">Compétences</a>
+        <a href="../Competence/home_competence.html">Compétences</a>
         <a href="../moi/presentation.html#cv">CV</a>
         <a href="../index.html#contact">Contact</a>
       </nav>
@@ -45,15 +45,22 @@
 				<button data-filter="web">Web</button>
 				<button data-filter="but">BUT Informatique</button>
 				<button data-filter="stage">Stage</button>
+				<button data-filter="python">Python</button>
+				<button data-filter="php">PHP</button>
+				<button data-filter="css">CSS</button>
+				<button data-filter="sql">SQL</button>
+				<button data-filter="ia">IA</button>
+				<button data-filter="algorithmes">Algorithmes</button>
+				<button data-filter="optimisation">Optimisation</button>
 
 			</div>
 			<div class="filters">
-				<button data-filter="réaliser">Réaliser</button>
-				<button data-filter="optimiser">optimiser</button>
-				<button data-filter="administrer">administrer</button>
-				<button data-filter="gérer">gérer</button>
-				<button data-filter="conduire">conduire</button>
-				<button data-filter="collaborer">collaborer</button>
+				<button data-filter="realiser">Réaliser</button>
+				<button data-filter="optimiser">Optimiser</button>
+				<button data-filter="administrer">Administrer</button>
+				<button data-filter="gerer">Gérer</button>
+				<button data-filter="conduire">Conduire</button>
+				<button data-filter="collaborer">Collaborer</button>
 
 			</div>
 		</section>
@@ -61,7 +68,7 @@
 		<section class="card section">
 			<div class="projects-grid">
 
-				<article class="project" data-tags="data statistiques stage réaliser optimiser  conduire">
+				<article class="project" data-tags="python data statistiques stage but realiser optimiser conduire">
 					<h3>Helpis</h3>
 					    <div class="project-image">
 							<img src="./img/helpis.png" alt="Projet Helpis – Application Python de data analyse">
@@ -76,12 +83,10 @@
 						<span>#Data</span>
 						<span>#Statistiques</span>
 					</div>
-					<!-- <a href="projets/helpis.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="project-link" data-project="helpis">Voir le projet</button>
 				</article>
 
-				<article class="project" data-tags=" but optimiser">
+				<article class="project" data-tags="python algorithmes optimisation but optimiser">
 					<h3>Solution au probleme des n-reines</h3>
 						<div class="project-image">
 							<img src="./img/n_reine.webp" alt="n-reine">
@@ -93,12 +98,10 @@
 						<span>#Python</span>
 						<span>#Optimiser</span>
 					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="project-link" data-project="n_reines">Voir le projet</button>
 				</article>
 				
-				<article class="project" data-tags="web but réaliser gérer collaborer conduire">
+				<article class="project" data-tags="php css sql but realiser gerer collaborer conduire">
 					<h3>Site de consultation et publication d'offres de voyages</h3>
 						<div class="project-image">
 							<img src="./img/pact.png" alt="pact">
@@ -108,15 +111,15 @@
 					</p>
 					<div class="project">
 						<span>#Web</span>
+                <span>#PHP</span>
+                <span>#Scrum</span>
 
 
 					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="project-link" data-project="voyages">Voir le projet</button>
 				</article>
 				
-				<article class="project" data-tags=" ia  statistiques sql but réaliser optimiser gérer collaborer conduire" >
+				<article class="project" data-tags="python ia statistiques sql but realiser optimiser gerer collaborer conduire">
 					<h3>Projet Muse</h3>
 						<div class="project-image">
 							<img src="./img/MuSE_logo.png" alt="muse">
@@ -126,13 +129,10 @@
 					</p>
 					<div class="project">
 						<span>#Python</span>
-						<span>#Statistiques</span>
-						<span>#IA</span>
-
+                <span>#IA</span>
+                <span>#GraphSAGE</span>
 					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="project-link" data-project="muse">Voir le projet</button>
 				</article>
 
 			</div>
@@ -145,11 +145,19 @@
             <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
         </footer>
         
-        <script src="../scene-component.js"></script>
-        <script src="script.js"></script>
-
-
     </main>
+
+    <!-- Modal for project details -->
+    <div id="project-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="../scene-component.js"></script>
+    <script src="script.js"></script>
+
 </body>
   
 </html>

@@ -28,7 +28,7 @@
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="../../moi/presentation.html">À propos</a>
         <a href="../../projet/home_projet.html">Projets</a>
-        <a href="../../Compétence/home_competence.html">Compétences</a>
+        <a href="../../Competence/home_competence.html">Compétences</a>
         <a href="../../moi/presentation.html#cv">CV</a>
         <a href="../../index.html#contact">Contact</a>
       </nav>
@@ -80,61 +80,56 @@
             </div>
             <div class="projects-grid">
                 
-				<article class="project" data-tags="data statistiques stage réaliser optimiser  conduire">
+				<article class="project" data-tags="python data statistiques stage but realiser optimiser conduire">
 					<h3>Helpis</h3>
 					    <div class="project-image">
-							<img src="../../projet/img/helpis.png" alt="Projet Helpis – Application Python de data analyse">
+							<img src="/projet/img/helpis.png" alt="Projet Helpis – Application Python de data analyse">
 						</div>
 
 					<p>
 						Développement d’une application Python permettant l’assistance
 						au traitement et à l’analyse de données de laboratoire.
 					</p>
-					<div class="project">
+					<div class="project-tags">
 						<span>#Python</span>
 						<span>#Data</span>
 						<span>#Statistiques</span>
 					</div>
-					<!-- <a href="projets/helpis.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="competence-link" data-project="helpis">Voir le projet</button>
 				</article>
 
-				<article class="project" data-tags=" but optimiser">
+				<article class="project" data-tags="python algorithmes optimisation but optimiser">
 					<h3>Solution au probleme des n-reines</h3>
 						<div class="project-image">
-							<img src="../../projet/img/n_reine.webp" alt="n-reine">
+							<img src="/projet/img/n_reine.webp" alt="n-reine">
 						</div>
 					<p>
 						Developpement d'un algorithme en Python pour résoudre le problème des n-reines en utilisant en cherchant la rapidité.
 					</p>
-					<div class="project">
+					<div class="project-tags">
 						<span>#Python</span>
-						<span>#Optimiser</span>
+						<span>#Algorithmes</span>
+						<span>#Optimisation</span>
 					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="competence-link" data-project="n_reines">Voir le projet</button>
 				</article>
 				
 				
-				<article class="project" data-tags=" ia  statistiques sql but réaliser optimiser gérer collaborer conduire" >
+				<article class="project" data-tags="python ia statistiques sql but realiser optimiser gerer collaborer conduire">
 					<h3>Projet Muse</h3>
 						<div class="project-image">
-							<img src="../../projet/img/MuSE_logo.png" alt="muse">
+							<img src="/projet/img/MuSE_logo.png" alt="muse">
 						</div>
 					<p>
 						Developpement d'une application de recommandation musicale.
 					</p>
-					<div class="project">
-						<span>#Python</span>
-						<span>#Statistiques</span>
-						<span>#IA</span>
+					<div class="project-tags">
+                    <span>#Python</span>
+                    <span>#IA</span>
+                    <span>#GraphSAGE</span>
 
 					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="competence-link" data-project="muse">Voir le projet</button>
 				</article>
             </div>
 
@@ -145,9 +140,18 @@
             <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
         </footer>
         
-        <script src="../../scene-component.js"></script>
-        <script src="../script.js"></script>
+        
     </main>
+
+<!-- Modal for project details -->
+<div id="project-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+<script src="../../scene-component.js"></script>
+        <script src="../../script.js"></script>
 </body>
   
 </html>

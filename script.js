@@ -175,7 +175,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
     const player = document.getElementById('player');
     const temple = document.querySelector('.temple');
     const prompt = document.getElementById('interactPrompt');
-    console.log('initTempleInteraction: elements found', { player: !!player, temple: !!temple, prompt: !!prompt });
+    // console.log('initTempleInteraction: elements found', { player: !!player, temple: !!temple, prompt: !!prompt });s
 
     // retry shortly if any element is missing (script may run before DOM insertion)
     if(!player || !temple || !prompt){
@@ -207,7 +207,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       const inY = pCenterY >= (tTop - expand) && pCenterY <= (tBottom + expand);
       const near = inX && inY;
 
-      console.log('checkProximity:', { pCenterX, pCenterY, tLeft, tTop, tRight, tBottom, near });
+      // console.log('checkProximity:', { pCenterX, pCenterY, tLeft, tTop, tRight, tBottom, near });
 
       if(near && !canInteract){
         canInteract = true;
@@ -269,4 +269,90 @@ document.getElementById('year').textContent = new Date().getFullYear();
     updateHeaderHeight();
   })();
 
+// Project modal functionality
+const modal = document.getElementById('project-modal');
+const modalBody = document.getElementById('modal-body');
+const closeModal = document.querySelector('.close-modal');
+
+if (modal && modalBody && closeModal) {
+  document.querySelectorAll('.project-link').forEach(button => {
+    button.addEventListener('click', function() {
+      const project = this.dataset.project;
+      fetch(`./projet/liste_projet/${project}.html`)
+        .then(response => response.text())
+        .then(html => {
+          modalBody.innerHTML = html;
+          modal.style.display = 'flex';
+        })
+        .catch(error => {
+          console.error('Erreur lors du chargement du projet:', error);
+          modalBody.innerHTML = '<p>Erreur lors du chargement du projet.</p>';
+          modal.style.display = 'flex';
+        });
+    });
+  });
+
+  document.querySelectorAll('.competence-link').forEach(button => {
+    button.addEventListener('click', function () {
+      const competence_project = this.dataset.project;
+
+      fetch(`/../../projet/liste_projet/${competence_project}.html`)
+        .then(response => {
+          if (!response.ok) throw new Error("404");
+          return response.text();
+        })
+        .then(html => {
+          modalBody.innerHTML = html;
+          modal.style.display = 'flex';
+        })
+        .catch(error => {
+          console.error('Erreur lors du chargement de la compétence:', error);
+          modalBody.innerHTML = '<p>Erreur lors du chargement de la compétence.</p>';
+          modal.style.display = 'flex';
+        });
+    });
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+}
+// Project filtering functionality
+const filterButtons = document.querySelectorAll(".filters button");
+const projectArticles = document.querySelectorAll(".project");
+
+// Set "Tous" button as active by default
+const allButton = document.querySelector('.filters button[data-filter="all"]');
+if (allButton) {
+  allButton.classList.add("active");
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    // Remove active class from all buttons
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    // Add active class to clicked button
+    button.classList.add("active");
+
+    const filter = button.dataset.filter;
+
+    projectArticles.forEach(project => {
+      const tags = project.dataset.tags;
+
+      if (filter === "all") {
+        project.style.display = "block";
+      } else if (tags && tags.includes(filter)) {
+        project.style.display = "block";
+      } else {
+        project.style.display = "none";
+      }
+    });
+  });
+});
 

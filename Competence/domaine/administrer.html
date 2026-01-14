@@ -28,7 +28,7 @@
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="../../moi/presentation.html">À propos</a>
         <a href="../../projet/home_projet.html">Projets</a>
-        <a href="../../Compétence/home_competence.html">Compétences</a>
+        <a href="../../Competence/home_competence.html">Compétences</a>
         <a href="../../moi/presentation.html#cv">CV</a>
         <a href="../../index.html#contact">Contact</a>
       </nav>
@@ -89,7 +89,7 @@
 					<p>
 						
 					</p>
-					<div class="project">
+					<div class="project-tags">
 					
 					</div>
 					<!-- <a href="projets/analyse-performances.html" class="project-link">
@@ -113,9 +113,18 @@
             <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
         </footer>
         
-        <script src="../../scene-component.js"></script>
-        <script src="../script.js"></script>
+        
     </main>
+
+<!-- Modal for project details -->
+<div id="project-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+<script src="../../scene-component.js"></script>
+        <script src="../../script.js"></script>
 </body>
   
 </html>

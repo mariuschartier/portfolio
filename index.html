@@ -28,7 +28,7 @@
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="./moi/presentation.html">À propos</a>
         <a href="./projet/home_projet.html">Projets</a>
-        <a href="./Compétence/home_competence.html">Compétences</a>
+        <a href="./Competence/home_competence.html">Compétences</a>
         <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -48,75 +48,73 @@
       </pre>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="card section">
-      <div class="section-header"><pre class="ascii-title">--[ PROJETS ]--</pre></div>
-      <div class="projects-grid">
+<!-- Projets -->
+<section id="projets" class="card section">
+    <div class="section-header"><pre class="ascii-title">--[ PROJETS ]--</pre></div>
+    <div class="filters">
+        <button data-filter="all">Tous</button>
+        <button data-filter="statistiques">Statistiques</button>
+        <button data-filter="data">Data</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="but">BUT</button>
+        <button data-filter="stage">Stage</button>
+        <button data-filter="python">Python</button>
+        <button data-filter="php">PHP</button>
+        <button data-filter="css">CSS</button>
+        <button data-filter="sql">SQL</button>
+        <button data-filter="ia">IA</button>
+    </div>
+    <div class="projects-grid">
+        <article class="project" data-tags="python data statistiques stage but realiser optimiser conduire">
+            <h3>Helpis</h3>
+            <div class="project-image">
+                <img src="./projet/img/helpis.png" alt="Projet Helpis – Application Python de data analyse">
+            </div>
+            <p>
+                Développement d'une application Python d'assistance au traitement et à l'analyse de données de laboratoire.
+            </p>
+            <div class="project">
+                <span>#Python</span>
+                <span>#Data</span>
+                <span>#Statistiques</span>
+            </div>
+            <button class="project-link" data-project="helpis">Voir le projet</button>
+        </article>
 
-				<article class="project" data-tags="data python statistiques stage">
-					<h3>Helpis</h3>
-					    <div class="project-image">
-							<img src="./projet/img/helpis.png" alt="Projet Helpis – Application Python de data analyse">
-						</div>
+        <article class="project" data-tags="php css sql but realiser gerer collaborer conduire">
+            <h3>Site de voyages</h3>
+            <div class="project-image">
+                <img src="./projet/img/pact.png" alt="pact">
+            </div>
+            <p>
+                Plateforme web de consultation et publication d'offres de voyages développée en équipe avec Scrum.
+            </p>
+            <div class="project">
+                <span>#Web</span>
+                <span>#PHP</span>
+                <span>#Scrum</span>
+            </div>
+            <button class="project-link" data-project="voyages">Voir le projet</button>
+        </article>
 
-					<p>
-						Développement d’une application Python permettant l’assistance
-						au traitement et à l’analyse de données de laboratoire.
-					</p>
-					<div class="project-tags">
-						<span>#Python</span>
-						<span>#Data</span>
-						<span>#Statistiques</span>
-					</div>
-					<!-- <a href="projets/helpis.html" class="project-link">
-						Voir le projet
-					</a> -->
-				</article>
-
-
-				
-				
-				<article class="project" data-tags="php CSS sql but">
-					<h3>Site de consultation et publication d'offres de voyages</h3> 
-						<div class="project-image">
-							<img src="./projet/img/pact.png" alt="pact">
-						</div>
-					<p>
-						Mise en place d'un site de voyage fonctionnel.
-					</p>
-					<div class="project-tags">
-						<span>#PHP</span>
-						<span>#SQL</span>
-						<span>#CSS</span>
-
-					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
-				</article>
-				
-				<article class="project" data-tags="python ia  statistiques but">
-					<h3>Projet Muse</h3>
-						<div class="project-image">
-							<img src="./projet/img/MuSE_logo.png" alt="muse">
-						</div>
-					<p>
-						Développement d'une application de recommandation musicale.
-					</p>
-					<div class="project-tags">
-						<span>#Python</span>
-						<span>#Statistiques</span>
-						<span>#IA</span>
-
-					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
-				</article>
-
-			</div>
-      <a href="./projet/home_projet.html">Voir plus</a>
-    </section>
+        <article class="project" data-tags="python ia statistiques sql but realiser optimiser gerer collaborer conduire">
+            <h3>Projet Muse</h3>
+            <div class="project-image">
+                <img src="./projet/img/MuSE_logo.png" alt="muse">
+            </div>
+            <p>
+                API de recommandation musicale utilisant l'IA et GraphSAGE (projet en cours).
+            </p>
+            <div class="project">
+                <span>#Python</span>
+                <span>#IA</span>
+                <span>#GraphSAGE</span>
+            </div>
+            <button class="project-link" data-project="muse">Voir le projet</button>
+        </article>
+    </div>
+    <a href="./projet/home_projet.html">Voir tous les projets</a>
+</section>
 
     <!-- Skills -->
 <section class="card section">
@@ -126,49 +124,50 @@
 
     <div class="domaine_de_competence_grid">
         <article class="domaine_de_competence">
-            <h3><a href="./Compétence/domaine/réaliser.html" title="plus de détail">Realiser : développement d’applications</a></h3>
+            <h3><a href="./Competence/domaine/realiser.html" title="plus de détail">Realiser : développement d’applications</a></h3>
             <p class="objectif-desc">
                 Concevoir, développer et maintenir des applications informatiques en respectant les besoins fonctionnels et techniques.
             </p>
         </article>
 
         <article class="domaine_de_competence">
-            <h3><a href="./Compétence/domaine/optimiser.html" title="plus de détail">Optimiser des applications informatiques</a></h3>
+            <h3><a href="./Competence/domaine/optimiser.html" title="plus de détail">Optimiser des applications informatiques</a></h3>
             <p class="objectif-desc">
                 Améliorer les performances, la qualité et la maintenabilité des applications existantes.
             </p>
         </article>
 
         <article class="domaine_de_competence">
-            <h3><a href="./Compétence/domaine/administrer.html" title="plus de détail">Administration des systèmes</a></h3>
+            <h3><a href="./Competence/domaine/administrer.html" title="plus de détail">Administration des systèmes</a></h3>
             <p class="objectif-desc">
                 Administrer des systèmes informatiques et comprendre les bases des réseaux et des services serveurs.
             </p>
         </article>
 
         <article class="domaine_de_competence">
-            <h3><a href="./Compétence/domaine/gérer.html" title="plus de détail">Gestion de projets informatiques</a></h3>
+            <h3><a href="./Competence/domaine/gerer.html" title="plus de détail">Gestion de projets informatiques</a></h3>
             <p class="objectif-desc">
                 Planifier, organiser et suivre un projet informatique en respectant les contraintes de qualité et de délais.
             </p>
         </article>
 
         <article class="domaine_de_competence">
-            <h3><a href="./Compétence/domaine/conduire.html" title="plus de détail">Conduite de projets</a></h3>
+            <h3><a href="./Competence/domaine/conduire.html" title="plus de détail">Conduite de projets</a></h3>
             <p class="objectif-desc">
                 Participer activement à la conduite de projets en appliquant des méthodes de travail structurées.
             </p>
         </article>
 
         <article class="domaine_de_competence">
-            <h3><a href="./Compétence/domaine/collaborer.html" title="plus de détail">Collaborer : travail en équipe</a></h3>
+            <h3><a href="./Competence/domaine/collaborer.html" title="plus de détail">Collaborer : travail en équipe</a></h3>
             <p class="objectif-desc">
                 Collaborer efficacement au sein d’une équipe informatique en communiquant de manière claire et professionnelle.
             </p>
         </article>
     </div>
-    <a href="./Compétence/home_competence.html">Voir plus</a>
+    <a href="./Competence/home_competence.html">Voir plus</a>
 </section>
+
 
     <!-- CV -->
     <section id="cv" class="card section">
@@ -190,8 +189,15 @@
 
     <pre class="ascii-sep">----------------------------------------</pre>
     <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
-    <p class="small">Monde mystique limité • Bonhomme bâton jouable</p>
   </footer>
+
+  <!-- Modal for project details -->
+  <div id="project-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <div id="modal-body"></div>
+      </div>
+  </div>
 
   <script src="scene-component.js"></script>
   <script src="script.js"></script>

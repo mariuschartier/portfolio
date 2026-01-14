@@ -27,7 +27,7 @@
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="../../moi/presentation.html">À propos</a>
         <a href="../../projet/home_projet.html">Projets</a>
-        <a href="../../Compétence/home_competence.html">Compétences</a>
+        <a href="../../Competence/home_competence.html">Compétences</a>
         <a href="../../moi/presentation.html#cv">CV</a>
         <a href="../../index.html#contact">Contact</a>
       </nav>
@@ -94,41 +94,38 @@
             </div>
             <div class="projects-grid">
                 				
-				<article class="project" data-tags="web but réaliser gérer collaborer conduire">
+				<article class="project" data-tags="php css sql but realiser gerer collaborer conduire">
 					<h3>Site de consultation et publication d'offres de voyages</h3>
 						<div class="project-image">
-							<img src="../../projet/img/pact.png" alt="pact">
+							<img src="/projet/img/pact.png" alt="pact">
 						</div>
 					<p>
 						Mise en place d'un site de voyage fonctionnel.
 					</p>
-					<div class="project">
+					<div class="project-tags">
 						<span>#Web</span>
+                        <span>#PHP</span>
+                        <span>#Scrum</span>
 
 
 					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="competence-link" data-project="voyages">Voir le projet</button>
 				</article>
 				
-				<article class="project" data-tags=" ia  statistiques sql but réaliser optimiser gérer collaborer conduire" >
+				<article class="project" data-tags="python ia statistiques sql but realiser optimiser gerer collaborer conduire" >
 					<h3>Projet Muse</h3>
 						<div class="project-image">
-							<img src="../../projet/img/MuSE_logo.png" alt="muse">
+							<img src="/projet/img/MuSE_logo.png" alt="muse">
 						</div>
 					<p>
 						Developpement d'une application de recommandation musicale.
 					</p>
-					<div class="project">
+					<div class="project-tags">
 						<span>#Python</span>
-						<span>#Statistiques</span>
-						<span>#IA</span>
-
+                        <span>#IA</span>
+                        <span>#GraphSAGE</span>
 					</div>
-					<!-- <a href="projets/analyse-performances.html" class="project-link">
-						Voir le projet
-					</a> -->
+					<button class="competence-link" data-project="muse">Voir le projet</button>
 				</article>
 
             </div>
@@ -145,9 +142,18 @@
             <p>© <span id="year"></span> Marius Chartier-Le Goff — Portfolio</p>
         </footer>
         
-        <script src="../../scene-component.js"></script>
-        <script src="../script.js"></script>
+        
     </main>
+
+<!-- Modal for project details -->
+<div id="project-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+<script src="../../scene-component.js"></script>
+        <script src="../../script.js"></script>
 </body>
   
 </html>
