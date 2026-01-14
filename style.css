@@ -309,7 +309,7 @@ body.intro-done .scene{ transition: filter 700ms ease; filter:none }
 }
 .moon pre {
   font-size: medium;
-  color: yellow;
+  color: #EBDA98;
 }
 
 /* Modal styles */
